@@ -1,0 +1,283 @@
+*{margin: 0;
+}
+body {
+    background:#202020;
+    
+}
+.mainnav{
+    position: fixed;
+    height: 66px;
+    width: 100%;
+    background:#656363 ;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+.mainnav ul li a:hover{opacity: 0.8;}
+ .drops {
+    
+    width: 13.3%;
+    height: 100px;
+    
+    background-position: center;
+    background-image: url(img/jlogo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+     cursor: pointer;
+     
+}
+
+.drops:hover{
+
+    opacity: 0.6;
+}
+.mainnav ul{ 
+    height: inherit;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left:10px;
+    width: 86.7%;
+}
+.mainnav ul li { 
+    
+    list-style: none;
+    width: 25%;
+    
+}
+.mainnav ul li a { 
+    display : block;
+    width: 240px;
+    height: 100%;
+    padding: 0 10px;
+    text-transform: capitalize;
+    color: azure;
+    font-family: sans-serif;
+    font-size: 25px;
+    text-align:center;
+    text-decoration: none;
+   
+}
+.mainnav ul li ul  { 
+    display : none;
+   position: absolute;
+    
+    padding: 5px;
+   
+   background-color : #A0A0A0;
+    border-radius: 0px 0px 5px 5px;
+    
+}
+.mainnav ul li:hover ul { 
+   display:block;
+    top: 66px;
+    width: 250px;
+    transition: all 0.3s ease-in-out;
+}
+.mainnav ul li ul li  { 
+    width: 210px;
+    border-radius:5px;
+    
+}
+.mainnav ul li  ul li a { 
+   
+    padding:8 14px;
+    
+    
+}
+.mainnav ul li ul a:hover { 
+   
+   background-color: dimgray; 
+}
+
+.sidebar{
+   position: fixed;
+     background: #A0A0A0;
+    bottom: 0;
+    top: 90px;
+    width: 0;
+    height :calc(100hv-100px);
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+
+}
+.sidebar ul {
+    
+    overflow: hidden;
+   
+    visibility: hidden;
+}
+.sidebar ul li {
+    
+    line-height: 40px;
+    list-style: none;
+    
+   
+}
+.sidebar ul li span ,.sidebar ul li a {
+    display: block;
+
+    padding:0 10px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+    font-family: sans-serif;
+    font-size: 20px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.sidebar ul li a:hover{
+    background-color: #222;
+     
+}
+.b { padding-top: 50px;
+    height: 330px;
+    width: 100%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+
+.b a{
+     font-size: 20px;  
+    padding-left: 10px;
+  width:inherit;
+   display: flex;
+    flex-wrap: wrap; 
+    display: block;
+   text-decoration: none;
+    width:  33.33333%;
+    line-height: 40px;
+    list-style: none;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.c { 
+    height: 300px;
+    width: 100%;
+    padding: 20px 200px 0px 200px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+}
+.container{
+    padding-top: 65px;
+}
+
+.c a {
+    padding-bottom: 0px;
+    
+    font-size: 20px; 
+   display: flex;
+    flex-wrap: wrap; 
+    display: block;
+   width:  50%;
+   
+    list-style: none;
+   text-align: center;
+    text-decoration:none;
+ color: whitesmoke;
+}
+.gl {
+    
+    
+    background-color: #A0A0A0;
+    background-image: url(img/gaming-laptops.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+     cursor: pointer;
+     
+}
+.gd {
+    
+    
+    background-color: #A0A0A0;
+    background-image: url(img/gaming-desktops.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size :100%;
+     cursor: pointer;
+     
+}
+.wd {
+    
+    
+    background-color: #A0A0A0;
+    background-image: url(img/workstation-desktops.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+     cursor: pointer;
+     
+}
+.wl {
+    
+
+    background-color: #A0A0A0;
+    background-image: url(img/workstation-laptops.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+     cursor: pointer;
+     
+}
+
+.gs {
+    
+
+    background-color: #A0A0A0;
+    background-image: url(img/gearshop-2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+     cursor: pointer;
+     
+}
+.carousel-caption{padding-bottom: 210px;
+    text-align: left;
+  
+}
+.review{
+    width: 100%;
+    height: 200px;
+     align-items: center;
+  justify-content: center;
+     display: flex;
+    flex-wrap: wrap;
+    z-index: 1000;
+    
+}
+
+.review p{
+   
+    width:50%;
+    color: lightgray;
+    
+    display: block;
+}
+
+
+
+.videopart{ 
+    padding-top: 50px;
+    text-align: center;
+ 
+}
+.aboutus {
+   width: 80%;
+   color: cornsilk; 
+   text-align: center;
+   padding-top: 200px;
+   padding-left: 160px;
+   background-repeat: no-repeat;
+   
+   background-size: 30%;
+    
+}
+
+
+

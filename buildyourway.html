@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Z | Welcome</title>
+    <link rel="stylesheet" href="eg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel=stylesheet href="css/index.css">
+    <script src="javascript/Main.js" async></script>
+    <link rel="stylesheet" href="css/additional.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+
+</head>
+    
+<body>
+  <div class="dropdown">
+    <nav>
+        <a href="eg.html"><img class="logo" src="./img1/1.png"></a>
+        <ul>
+            <li><a href="eg.html">Home</a></li>
+            <li><a href="#">Desktops <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="gamingdesktops.html">Gaming Desktop</a></li>
+                    <li><a href="workst.html">Workstation Desktop</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Laptops <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="gaminglap.html">Gaming Laptop</a></li>
+                    <li><a href="workslap.html">Workstation Laptop</a></li>
+                </ul>
+            </li>
+            <li><a href="gearshop.html">Accessories</a></li>
+            <li><a href="#">Services <i class="fas fa-caret-down"></i> </a>
+                <ul>
+                    <li><a href="Aboutus.html">About</a></li>
+                    <li><a href="#">Support</a></li>
+                    <li><a href="buildyourway.html">BuildyourWay</a></li>
+                </ul>
+            </li>>
+            <li><a href="login.html"><i class="fas fa-user-plus"> Login</i></a></li>
+            <li><a href="cart.html"><i class="cart"></i><i class="fas fa-shopping-cart"></i> Cart</a></li>
+        </ul>
+    </nav>
+  </div>
+
+    
+    <div class="select">
+      <form  name="checkoutf" action="checkorder.php" method="POST" onsubmit="share()" >
+            <fieldset>
+                <legend>Select your Parts</legend>
+                <label for="Cpu">Cpu</label><br>
+                <select name="Cpu" id = "cpulist">
+                <option value = "Ryzen™ 9 5950X Desktop Processors+" >Ryzen™ 9 5950X Desktop Processors </option>
+                <option value = "Ryzen™ 9 5900X Desktop Processors+">Ryzen™ 9 5900X Desktop Processors</option>
+                <option value = "Intel® Core™ i5-1130G7 Processor+">Intel® Core™ i5-1130G7 Processor</option>
+                <option value = "Intel® Core™ i7-1160G7 Processor+">Intel® Core™ i7-1160G7 Processor</option>
+              </select>
+              <div class="showing">
+                  <ul>
+                      <li style="background-image:url(img/616656-amd-ryzen-9-5000-series-PIB-1260x709_0.webp); " ><a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x">Knowmore</a></li>
+                      <li style="background-image:url(img/616656-amd-ryzen-9-5000-series-PIB-1260x709_0.webp);"><a href="https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x">Knowmore</a></li>
+                      <li style="background-image:url(img/intel\ i5.550.550\ .webp);"><a href="https://www.intel.in/content/www/in/en/products/processors/core/i7-processors/i7-1160g7.html">Knowmore</a></li>
+                      <li style="background-image:url(img/intel\ i7.webp);"><a href="https://www.intel.in/content/www/in/en/products/processors/core/i5-processors/i5-1130g7.html">Knowmore</a></li>
+                    </ul>
+              </div><br>
+              <label for="Gpu">Gpu</label><br>
+                <select name="Gpu" id = "gpulist">
+                <option value = "AMD Radeon™ RX 5700 XT 50th Anniversary Graphics  ">AMD Radeon™ RX 5700 XT 50th Anniversary Graphics</option>
+                <option value = "AMD Radeon™ RX 5700 Graphics  ">AMD Radeon™ RX 5700 Graphics</option>
+              </select><br>
+              <label for="Motherboard">Motherboard</label><br>
+                <select name="Motherboard" id = "mblist">
+                <option value = "MSI MPG Z490 Gaming Plus Gaming Motherboard">MSI MPG Z490 Gaming Plus Gaming Motherboard-INTEL</option>
+                <option value = "MSI X570-A PRO Motherboard">MSI X570-A PRO Motherboard-AMD</option>
+            </select><br>
+              <label for="Ram">Ram</label><br>
+                <select name="Ram" id = "ram">
+                <option value = "Corsair Vengeance RGB Pro 32GB (2x16GB) DDR4 3200 (PC4-25600) C16 Desktop Memory - Black">Corsair Vengeance RGB Pro 32GB (2x16GB) DDR4 3200 (PC4-25600) C16 Desktop Memory - Black </option>
+                <option value = "Corsair Vengeance LPX 16GB (2x8GB) DDR4 DRAM 3200MHz C16 Desktop Memory Kit - Black">Corsair Vengeance LPX 16GB (2x8GB) DDR4 DRAM 3200MHz C16 Desktop Memory Kit - Black</option>
+               </select><br>
+              <label for="Case">Case</label><br>
+                <select name="Case" id = "case">
+                <option value = "Corsair iCUE 465X RGB Mid-Tower ATX Smart Case with SP120 Pro RGB Fans, Black">Corsair iCUE 465X RGB Mid-Tower ATX Smart Case with SP120 Pro RGB Fans, Black </option>
+                <option value = "Antec NX230 NX Series-Mid Tower Gaming Cabinet Computer case with RGB Front Supports ATX, M-ATX, ITX Motherboard with Transparent Side Panel,1 x 120 mm Fan in Rear
+                ">Antec NX230 NX Series-Mid Tower Gaming Cabinet Computer case with RGB Front Supports ATX, M-ATX, ITX Motherboard with Transparent Side Panel,1 x 120 mm Fan in Rear
+            </option>
+              </select><br>
+              <a style="color: black;"href="https://www.amazon.in/Antec-NX230-Computer-Motherboard-Transparent/dp/B0843C1Q5Y/ref=asc_df_B0843C1Q5Y/?tag=googleshopdes-21&linkCode=df0&hvadid=397009381870&hvpos=&hvnetw=g&hvrand=1941389589178558667&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1007753&hvtargid=pla-908741786838&psc=1&ext_vrnc=hi">Knowmore</a>
+              
+              <label for="Psu">Psu</label><br>
+                <select name="Psu" id = "psu">
+                
+                <option value = "Antec EA750G PRO 80 Plus Gold Certified 750 Watt Semi- Modular Gaming Power Supply">Antec EA750G PRO 80 Plus Gold Certified 750 Watt Semi- Modular Gaming Power Supply</option>
+                <option value = "Corsair RM850 80 Plus Gold Power Supply (CP-9020196-UK) - 10 Year Warranty - 2019 Model
+                ">Corsair RM850 80 Plus Gold Power Supply (CP-9020196-UK) - 10 Year Warranty - 2019 Model
+            </option>
+              </select><br>
+              <label for="Storage">Storage</label><br>
+                <select name="Storage" id = "storage">
+                    <option value = "Seagate Barracuda SSD 2 TB Internal Solid State Drive – 2.5 Inch SATA 6 Gb/s for Computer Desktop PC Laptop (STGS2000401)">Seagate Barracuda SSD 2 TB Internal Solid State Drive – 2.5 Inch SATA 6 Gb/s for Computer Desktop PC Laptop (STGS2000401)</option>
+                <option value = "WD Green 2.5 SATA SSD, 550MB/s R, 3 Y Warranty, 1T">WD Green 2.5" SATA SSD, 550MB/s R, 3 Y Warranty, 1T</option>
+                <option value = "Samsung 860 EVO 1TB SATA 2.5 Internal Solid State Drive (SSD) (MZ-76E1T0)">Samsung 860 EVO 1TB SATA 2.5" Internal Solid State Drive (SSD) (MZ-76E1T0)
+            </option>
+              </select><br>
+              <label for="Cooler">Cooler</label><br>
+                <select name="Cooler" id = "cooler">
+                <option value = "Cooler Master MLX-D36M-A20PC-R1 MasterLiquid ML360R Addressable RGB AIO CPU Liquid Cooler 28 Independently-Controlled LEDs Triple 120mm ARGB Air Balance MF"> Cooler Master MLX-D36M-A20PC-R1 MasterLiquid ML360R Addressable RGB AIO CPU Liquid Cooler 28 Independently-Controlled LEDs Triple 120mm ARGB Air Balance MF</option>
+                <option value = "MSI MAG CORELIQUID 360R - AIO RGB CPU Liquid Cooler - Rotating Cap Design - 360mm Radiator - Triple 120mm RGB PWM Fans">MSI MAG CORELIQUID 360R - AIO RGB CPU Liquid Cooler - Rotating Cap Design - 360mm Radiator - Triple 120mm RGB PWM Fans</option>
+                
+              </select><br><br>
+              
+             
+           
+
+  
+   
+
+<pre  >Checkout</pre> 
+        <div  class="checkou" id="checkoutfd">
+            
+                
+                <label>Name:</label><br>
+                <input id="name" name="name" type="text" class="name" required/> <br>
+                <label>Address:</label><br>
+                <input id="add" name="address"  type="text" class="add" required /><br>
+                <label>Phone No:</label><br>
+                <input id="phone" name="phone" type="tel" class="num" required/><br>
+                <label>Email-id:</label><br>
+                <input id="email" name="email" type="email" class="email" required/><br>
+               
+                
+                <input  type="submit" value="Confirm" >
+
+           
+     
+        
+          </fieldset>
+        </form>   
+ </div>
+</div>
+ <script>
+     function share()
+{
+  var s= document.getElementById('cpulist').value+document.getElementById('gpulist').value+
+  document.getElementById('mblist').value+
+  document.getElementById('ram').value+
+  document.getElementById('case').value+
+  document.getElementById('psu').value+
+  document.getElementById('storage').value+
+  document.getElementById('cooler').value; 
+localStorage.setItem("custompc:", s);
+  var v=  localStorage.getItem("custompc:");
+ var name = document.getElementById('name').value; 
+ var email = document.getElementById('email').value; 
+ var phone = document.getElementById('phone').value; 
+    var adds=document.getElementById('add').value;
+    
+ $.post('process.php', {'name':name,'adds':adds,'phone':phone,'email':email,'products':v}, function(data){
+  alert('Order Placed Succesfully');
+});
+localStorage.removeItem('custompc:');
+
+}
+ </script>
+<footer>
+  <p>Generation Z | Copyright &copy; 2020</p>
+</footer>
+
+</body>
+
+</html>

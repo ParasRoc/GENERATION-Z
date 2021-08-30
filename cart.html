@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generation Z | Welcome</title>
+    <link rel="stylesheet" href="eg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel=stylesheet href="css/index.css">
+    <script src="javascript/Main.js" async></script>
+    <link rel="stylesheet" href="css/additional.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@5.2.3/dist/ionicons/ionicons.js"></script>
+</head>
+    
+<body>
+    <div class="dropdown">
+        <nav>
+            <a href="eg.html"><img class="logo" src="./img1/1.png"></a>
+            <ul>
+                <li><a href="eg.html">Home</a></li>
+                <li><a href="#">Desktops <i class="fas fa-caret-down"></i> </a>
+                    <ul>
+                        <li><a href="gamingdesktops.html">Gaming Desktop</a></li>
+                        <li><a href="workst.html">Workstation Desktop</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Laptops <i class="fas fa-caret-down"></i> </a>
+                    <ul>
+                        <li><a href="gaminglap.html">Gaming Laptop</a></li>
+                        <li><a href="workslap.html">Workstation Laptop</a></li>
+                    </ul>
+                </li>
+                <li><a href="gearshop.html">Accessories</a></li>
+                <li><a href="#">Services <i class="fas fa-caret-down"></i> </a>
+                    <ul>
+                        <li><a href="Aboutus.html">About</a></li>
+                        <li><a href="#">Support</a></li>
+                        <li><a href="buildyourway.html">BuildyourWay</a></li>
+                    </ul>
+                </li>>
+                <li><a href="login.html"><i class="fas fa-user-plus"> Login</i></a></li>
+                <li class="cart"><a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart<span>0</span></a></li>
+            </ul>
+        </nav>
+    </div>
+
+    
+    
+<div class="cart-container" >
+    <button class="hides" id="hides" onclick="active()"> Checkout</button> 
+        <div  class="checkout" id="checkoutfd">
+            <input  type="button"  value="Close" onclick="deactive()" > <br>
+                <form  name="checkoutf" action="checkorder.php" method="POST" onsubmit="share()" >
+                <label>Name:</label><br>
+                <input id="name" name="name" type="text" class="name" required/> <br>
+                <label>Address:</label><br>
+                <input id="add" name="address"  type="text" class="add" required /><br>
+                <label>Phone No:</label><br>
+                <input id="phone" name="phone" type="tel" class="num" required/><br>
+                <label>Email-id:</label><br>
+                <input id="email" name="email" type="email" class="email" required/><br>
+               
+                
+                <input  type="submit" value="Confirm" >
+
+            </form>
+        </div>
+    <div class="products-header">
+            <h5 class="title">TITLE</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="qty">QUANTITY</h5>
+            <h5 class="total">TOTAL</h5>
+            
+        </div>
+        <div class="products">
+        </div>
+        <div class="totalcost">
+
+        </div>
+        
+        
+ </div>
+ 
+ <script>
+     function share()
+{
+  var v=  localStorage.getItem("productsincart");
+  
+ var name = document.getElementById('name').value; 
+ var email = document.getElementById('email').value; 
+ var phone = document.getElementById('phone').value; 
+    var adds=document.getElementById('add').value;
+    
+ $.post('process.php', {'name':name,'adds':adds,'phone':phone,'email':email,'products':v}, function(data){
+  alert('Order Placed Succesfully');
+});
+localStorage.removeItem('cartnumbers');
+localStorage.removeItem('productsincart');
+localStorage.removeItem('totalcost');
+}
+ </script>
+
+     
+    
+
+</body>
+</html>
